@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "form.h"
 #include "ocultar.h"
 #include <QFileDialog>
 
