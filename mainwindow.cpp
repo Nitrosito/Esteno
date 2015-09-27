@@ -2,6 +2,8 @@
 #include "ui_mainwindow.h"
 #include "ocultar.h"
 #include <QFileDialog>
+#include <QDebug>
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -32,18 +34,21 @@ void MainWindow::on_pushButton_revelar_clicked()
     char frase[1000000];
     int filas, columnas;
     TipoImagen img;
-    char imagen[10000];
     //imagen a revelar
-    img = LeerTipoImagen(imagen,filas,columnas);
+    img = LeerTipoImagen(ruta.toStdString().c_str(),filas,columnas);
 
     const char* rutac= ruta.toStdString().c_str();
+    qDebug() << img;
+     if( img == IMG_PGM){
+                LeerImagenPGM(rutac,filas,columnas,buffer);
+                Revelar(buffer,frase);
+     }
+     else if( img == IMG_PPM){
+                LeerImagenPPM(rutac,filas,columnas,buffer);
+                Revelar(buffer,frase);
+     }
 
-        if( img == IMG_PGM)
-            LeerImagenPGM(rutac,filas,columnas,buffer);
-        else
-            LeerImagenPPM(rutac,filas,columnas,buffer);
 
-        Revelar(buffer,frase);
 
         QString fraseq(frase);
         ui->textBrowser->setText(fraseq);

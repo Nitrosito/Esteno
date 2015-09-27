@@ -3,7 +3,7 @@
 # Project created by QtCreator 2015-05-02T10:21:55
 #
 #-------------------------------------------------
-
+CONFIG += console
 QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -26,3 +26,4 @@ HEADERS  += mainwindow.h \
     revelar.h
 
 FORMS    += mainwindow.ui
+
