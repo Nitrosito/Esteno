@@ -15,6 +15,9 @@ public:
     explicit AcercaDe(QWidget *parent = 0);
     ~AcercaDe();
 
+private slots:
+    void on_label_linkActivated(const QString &link);
+
 private:
     Ui::AcercaDe *ui;
 };
