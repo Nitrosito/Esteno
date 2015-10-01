@@ -26,21 +26,33 @@
     <string>OK</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label">
+  <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>10</y>
-     <width>401</width>
-     <height>231</height>
+     <y>20</y>
+     <width>399</width>
+     <height>211</height>
     </rect>
    </property>
-   <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Esteno es una interfaz gráfica hecha para la Práctica 2 de Metodologia&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;de la Programación. Encripta y desencripta texto en imagenes&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Autor: Carlos Martín Carrasco | Nitrosito&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Email: nitrosito@gmail.com&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Fecha: Julio 2015&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Licencia: GPLv3&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="minimumSize">
+       <size>
+        <width>397</width>
+        <height>209</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;Esteno es una interfaz gráfica hecha para la Práctica 2 de Metodologia&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;de la Programación. Encripta y desencripta texto en imagenes&lt;br/&gt;&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Autor: Carlos Martín Carrasco | Nitrosito&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Email: nitrosito@gmail.com&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Fecha: Julio 2015&lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;Licencia: GPLv3&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

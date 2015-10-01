@@ -12,3 +12,8 @@ AcercaDe::~AcercaDe()
 {
     delete ui;
 }
+
+void AcercaDe::on_Ok_clicked()
+{
+
+}

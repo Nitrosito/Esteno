@@ -66,6 +66,7 @@ void MainWindow::on_actionAcerca_de_triggered()
 {
     AcercaDe *ventanaAcerca = new AcercaDe(this);
     ventanaAcerca->setModal(true);
+    ventanaAcerca->setFixedSize(ventanaAcerca->size());
     ventanaAcerca->show();
 
 }

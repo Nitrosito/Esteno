@@ -2,7 +2,7 @@
 #define ACERCADE_H
 
 #include <QDialog>
-
+#include "QObject"
 namespace Ui {
 class AcercaDe;
 }
@@ -16,7 +16,7 @@ public:
     ~AcercaDe();
 
 private slots:
-    void on_label_linkActivated(const QString &link);
+    void on_Ok_clicked();
 
 private:
     Ui::AcercaDe *ui;
