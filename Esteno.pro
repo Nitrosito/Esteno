@@ -17,13 +17,16 @@ SOURCES += main.cpp\
     codificar.cpp \
     imagenes.cpp \
     ocultar.cpp \
-    revelar.cpp
+    revelar.cpp \
+    acercade.cpp
 
 HEADERS  += mainwindow.h \
     codificar.h \
     imagenes.h \
     ocultar.h \
-    revelar.h
+    revelar.h \
+    acercade.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    acercade.ui
 

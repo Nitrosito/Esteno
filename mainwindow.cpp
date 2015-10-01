@@ -3,7 +3,7 @@
 #include "ocultar.h"
 #include <QFileDialog>
 #include <QDebug>
-
+#include "acercade.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -60,4 +60,11 @@ void MainWindow::on_pushButton_revelar_clicked()
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_actionAcerca_de_triggered()
+{
+    AcercaDe *ventanaAcerca = new AcercaDe;
+    ventanaAcerca->show();
+
 }

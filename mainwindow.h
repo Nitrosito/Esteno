@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButton_revelar_clicked();
 
+    void on_actionAcerca_de_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
