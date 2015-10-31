@@ -1,5 +1,5 @@
 # Esteno
-```Esteganografia básica realizado en C++ con GUI en QT4```<br>
+```Esteganografía básica realizado en C++ con GUI en QT4```<br>
 ```Autor: Carlos Martín Carrasco ```<br>
 ```Fecha: 3 Mayo 2015 ```<br>
 ```Licencia GPLv2 ```<br>
